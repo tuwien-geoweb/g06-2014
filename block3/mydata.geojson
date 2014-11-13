@@ -1,0 +1,57 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Andreas Hocevar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3916015625,
+          48.21735290928554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Loidolt Claudia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.011006832122803,
+          48.08920266407749
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Herold Nina"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.463849544525146,
+          48.1498247496202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Andrea Czernay"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.378555297851562,
+          48.19813361113582
+        ]
+      }
+    }
+  ]
+}
