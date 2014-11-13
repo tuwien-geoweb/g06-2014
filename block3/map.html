@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
+  <!-- Bootstrap resources -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://openlayers.org/en/v3.0.0/css/ol.css" type="text/css">
     <style>
     html, body {
@@ -17,7 +19,13 @@
     <title>OpenLayers 3 example</title>
   </head>
   <body>
+  <div class="row">
+    <div class="col-md-8">
     <div id="map" class="map"></div>
+    </div>
+   <div class="col-md-4">
+     <h3>About this map</h3>
+     <p> Beispieltext</p>
     <script type="text/javascript">
       var map = new ol.Map({
         target: 'map',
