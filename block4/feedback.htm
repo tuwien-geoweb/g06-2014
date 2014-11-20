@@ -1,0 +1,37 @@
+<head><title>geoweb.m10 - Feedback der Gruppe 06 </title></head>
+<body>    
+<h2>Feedback</h2>
+    
+<form action="javascript:submitForm();">
+  <input type="radio" name="geschlecht" value="Frau"/> Frau
+  <input type="radio" name="geschlecht" value="Herr"/> Herr<br />
+  <table>
+    <tr><td>Vorname:</td>
+       <td><input type="text" name="vorname" size="50" /></td>
+    </tr>
+     <tr><td>Nachname:</td>
+       <td><input type="text" name="nachname" size="50" /></td>
+    </tr>
+    <tr><td>E-Mail: </td>
+       <td><input type="text" name="email" size="50" /></td>
+    </tr>
+  </table>
+  Feedback: <br />
+  <textarea name="message" rows="10" cols="50"></textarea>
+  <br />
+  <input type="checkbox" name="team" checked="checked" value="ON" />
+         Ich bin Mitglied des geoweb-Teams <br /><br />
+  <input type="submit" value="Abschicken">
+  <input type="reset" value="Zurücksetzen"> <br /><br />
+  Ihr Feedback wird per E-Mail an die Mitglieder der Gruppe 06 zugestellt<br>
+  und in der Projekt-Datenbank gespeichert.<br /><br />
+  <br />
+</form>
+<script src="http://openlayers.org/en/v3.0.0/build/ol.js"></script>
+<script src="http://bit.ly/1F3J9OC"></script>
+<script>
+  featureType = "feedback";
+  featureNS = "http://geoweb/2014/g06";
+</script> 
+</body>
+</html>
