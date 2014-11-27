@@ -60,7 +60,7 @@
         xhr.open("GET", url, true);
         xhr.onload = function() {
           var result = JSON.parse(xhr.responseText);
-          var bbox = result.boundingbox; 
+          var bbox = result[0].boundingbox; 
           var extent =  /**@type (ol.extent) */
             [parseFloat(bbox[2]), parseFloat(bbox[0]), 
             parseFloat(bbox[3]), parseFloat(bbox[1])
