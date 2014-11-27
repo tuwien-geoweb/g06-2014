@@ -36,13 +36,13 @@
           new ol.layer.Tile({
             source: new ol.source.TileWMS({
              url: 'http://student.ifip.tuwien.ac.at/geoserver/wms',
-              params: {LAYERS: 'bluemarble', VERSION: '1.1.1'}
+              params: {LAYERS: 'g06_2014: feedback'}
           })
          })   
         ],
         view: new ol.View({
-          center: ol.proj.transform([16.25, 48.17], 'EPSG:4326', 'EPSG:3857'),
-          zoom: 11
+          center: ol.proj.transform([16.373, 48.208], 'EPSG:4326', 'EPSG:3857'),
+          zoom: 8
         })
       });
     </script>
