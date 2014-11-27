@@ -54,14 +54,14 @@
 
       var form = document.getElementById("search");
       form.onsubmit = function (evt) {
-      evt.preventDefault();
-      var url = 'http://nominatim.openstreetmap.org/search?format=json&q=' + form.query.value;
-      var xhr = new XMLHttpRequest();
-      xhr.open("GET", url, true);
-      xhr.onload = function() {
-        var result = JSON.parse(xhr.responseText);
-        var position = [result[0].lon, result[0].lat]; /**@type (ol.Coordinat) */
-        map.getView().setCenter(ol.proj.transform(position, 'EPSG:4326', 'EPSG:3857'));
+        evt.preventDefault();
+        var url = 'http://nominatim.openstreetmap.org/search?format=json&q=' + form.query.value;
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", url, true);
+        xhr.onload = function() {
+          var result = JSON.parse(xhr.responseText);
+          var position = [parseFloat(result[0].lon), parseFloat(result[0].lat)]; /**@type (ol.Coordinat) */
+          map.getView().setCenter(ol.proj.transform(position, 'EPSG:4326', 'EPSG:3857'));
       };
       xhr.send();
     }
