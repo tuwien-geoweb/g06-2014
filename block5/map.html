@@ -31,13 +31,7 @@
         target: 'map',
         layers: [
           new ol.layer.Tile({
-            source: new ol.source.MapQuest({layer: 'sat'})
-          }),
-          new ol.layer.Vector({
-            source: new ol.source.GeoJSON({
-            projection: 'EPSG:3857',
-            url: 'mydata.geojson'
-          })
+            source: new ol.source.MapQuest({layer: 'osm'})
          })   
         ],
         view: new ol.View({
@@ -45,6 +39,16 @@
           zoom: 11
         })
       });
+      
+      var geolocation = new ol.Geolocation({
+        projection: 'EPSG:4326'
+      });
+      geolocation.setTracking(true); // here the browser may ask for confirmation
+      geolocation.on('change:position', function() {
+        geolocation.setTracking(false);
+        map.getView().setCenter(geolocation.getPosition());
+});
+
     </script>
   </body>
 </html>
