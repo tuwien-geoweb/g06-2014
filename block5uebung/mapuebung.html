@@ -25,7 +25,7 @@
           <br>
           Search: <input name="query" type="text" size="40">
           <br>          
-          <input name="re-center" type="button" value="Reset-View" onclick="Javascript:zuruck();">
+          <input name="re-center" type="button" value="re-center" onclick="Javascript:recenter();">
           <br>
         </form>
       </div>
@@ -50,7 +50,7 @@
           maxZoom: 19
         })
       });
-      
+      function recenter() { 
       var geolocation = new ol.Geolocation({
         projection: 'EPSG:3857'
       });
@@ -62,6 +62,9 @@
       });
       
       var form = document.getElementById("search");
+      
+      recenter();
+      
       form.onsubmit = function(evt) {
         evt.preventDefault();
         var url = 'http://nominatim.openstreetmap.org/search?format=json&q=' + form.query.value;
