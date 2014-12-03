@@ -12,7 +12,7 @@
       }
     </style>
     <script src="http://openlayers.org/en/v3.0.0/build/ol.js" type="text/javascript"></script>
-    <title>OpenLayers 3 example - Gruppe 06</title>
+    <title>OpenLayers 3 - Gruppe 06</title>
   </head>
   <body>
     <div class="row full">
@@ -65,7 +65,7 @@
       
       recenter();
       
-      form.onsubmit = function(evt) {
+      form.onsubmit = function search(evt) {
         evt.preventDefault();
         var url = 'http://nominatim.openstreetmap.org/search?format=json&q=' + form.query.value;
         var xhr = new XMLHttpRequest();
