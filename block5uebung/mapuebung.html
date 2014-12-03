@@ -41,6 +41,15 @@
           new ol.layer.Vector({
             source: new ol.source.Vector({
               features: [marker]
+            }),
+         style: new ol.style.Style({
+            image: new ol.style.Icon(/** @type {olx.style.IconOptions} */ ({
+              anchor: [0.5, 46],
+              anchorXUnits: 'fraction',
+              anchorYUnits: 'pixels',
+              opacity: 0.75,
+              src: 'http://student.ifip.tuwien.ac.at/geoweb/2014/g10/website_g10/red.png'
+            }))
             })
           })
         ],
