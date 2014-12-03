@@ -25,7 +25,7 @@
           <br>
           Search: <input name="query" type="text" size="40">
           <br>          
-          <input name="re-center" type="button" value="re-center" onclick="Javascript:recenter();">
+          <input name="reset-location" type="button" value="Reset-View" onclick="Javascript:zuruck();">
           <br>
         </form>
       </div>
@@ -50,7 +50,7 @@
           maxZoom: 19
         })
       });
-      function recenter() { 
+      function zuruck() { 
       var geolocation = new ol.Geolocation({
         projection: 'EPSG:3857'
       });
@@ -60,6 +60,7 @@
         map.getView().setCenter(geolocation.getPosition());
         marker.setGeometry(new ol.geom.Point(map.getView().getCenter()));
       });
+      } 
       
       var form = document.getElementById("search");
       
