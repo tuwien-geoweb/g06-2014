@@ -71,10 +71,10 @@
         marker.setGeometry(new ol.geom.Point(map.getView().getCenter()));
         console.log("Accuracy of Geometry: " + geolocation.getAccuracy() + " meters");
       });
+ var form = document.getElementById("search");  
       }
       recenter();
       
-  var form = document.getElementById("search");  
       form.onsubmit = function search(evt) {
         evt.preventDefault();
         var url = 'http://nominatim.openstreetmap.org/search?format=json&q=' + form.query.value;
