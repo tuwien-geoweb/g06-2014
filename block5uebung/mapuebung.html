@@ -67,7 +67,7 @@
           projection: 'EPSG:3857'
         });
         geolocation.setTracking(true); // here the browser may ask for confirmation
-        geolocation.on('change:position', function() {
+        geolocation.on('change', function() {
         geolocation.setTracking(false);
         map.getView().fitGeometry(geolocation.getAccuracyGeometry(), map.getSize(), {nearest: true, maxZoom: 19});
         marker.setGeometry(new ol.geom.Point(map.getView().getCenter()));
