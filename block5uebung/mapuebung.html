@@ -69,7 +69,7 @@
         geolocation.setTracking(true); // here the browser may ask for confirmation
         geolocation.on('change:position', function() {
         geolocation.setTracking(false);
-        map.getView().setCenter(geolocation.getPosition());
+        map.getView().fitGeometry(geolocation.getAccuracyGeometry(), map.getSize(), { nearest: true, maxZoom: 19 });
         marker.setGeometry(new ol.geom.Point(map.getView().getCenter()));
         });
       }
