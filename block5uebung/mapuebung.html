@@ -27,7 +27,7 @@
           Search: <input name="query" type="text" size="40">
           <br>
           <br>
-          <input name="recenter-location" type="button" value="re-center map" onclick="Javascript:recenter();">
+          <input name="recenter-location" type="button" value="re-center map" onclick="JavaScript:recenter();">
           <br>
         </form>
       </div>
@@ -77,7 +77,7 @@
       recenter();
       var form = document.getElementById("search");
 
-      form.onsubmit = function search(evt) {
+      form.onsubmit = function(evt) {
         evt.preventDefault();
         var url = 'http://nominatim.openstreetmap.org/search?format=json&q=' + form.query.value;
         var xhr = new XMLHttpRequest();
