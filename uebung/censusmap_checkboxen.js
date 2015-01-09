@@ -108,7 +108,7 @@ var haltestellen = new ol.layer.Vector({
 }),
  style: new ol.style.Style({
        image: new ol.style.Icon({
-          src: 'https://cloud.githubusercontent.com/assets/9860428/5677921/f4ceb418-97ec-11e4-94f6-0dc7efaa27ab.png',
+          src: 'https://cloud.githubusercontent.com/assets/9718782/5680798/40cb48d4-9812-11e4-81a1-6588601345fd.png',
         })
       
     })
@@ -131,7 +131,7 @@ var schulen = new ol.layer.Vector({
 }),
  style: new ol.style.Style({
        image: new ol.style.Icon({
-          src: 'https://cloud.githubusercontent.com/assets/9860428/5677720/74a3f41c-97ea-11e4-8604-0952f3513419.png',
+          src: 'https://cloud.githubusercontent.com/assets/9718782/5680792/3287d1f2-9812-11e4-828a-9890046dfe66.png',
         })
       
     })
@@ -153,7 +153,7 @@ var universitaeten = new ol.layer.Vector({
 }),
  style: new ol.style.Style({
        image: new ol.style.Icon({
-          src: 'https://cloud.githubusercontent.com/assets/9860428/5677611/4e473d20-97e9-11e4-8b01-d96360ee01b6.png',
+          src: 'https://cloud.githubusercontent.com/assets/9718782/5680800/4b1f1504-9812-11e4-8e4b-c314a3525267.png',
         })
       
     })
@@ -174,7 +174,7 @@ var sportstaetten = new ol.layer.Vector({
 }),
  style: new ol.style.Style({
        image: new ol.style.Icon({
-          src: 'https://cloud.githubusercontent.com/assets/9860428/5677625/7a4ad710-97e9-11e4-923e-293fe6bd0bd1.png',
+          src: 'https://cloud.githubusercontent.com/assets/9718782/5680797/3c3ed934-9812-11e4-8f50-6ab195576f76.png',
         })
       
     })
@@ -195,7 +195,7 @@ var parkanlagen = new ol.layer.Vector({
 }),
  style: new ol.style.Style({
        image: new ol.style.Icon({
-          src: 'https://cloud.githubusercontent.com/assets/9860428/5677505/d9eaa42c-97e7-11e4-90ac-84579f56548b.png',
+          src: 'https://cloud.githubusercontent.com/assets/9718782/5680790/2b0d488a-9812-11e4-9463-9995d496c20c.png',
         })
       
     })
@@ -216,7 +216,7 @@ var spielplaetze = new ol.layer.Vector({
 }),
  style: new ol.style.Style({
        image: new ol.style.Icon({
-          src: 'https://cloud.githubusercontent.com/assets/9860428/5677662/d7d4bc84-97e9-11e4-9bbc-6ce468a5892a.png',
+          src: 'https://cloud.githubusercontent.com/assets/9718782/5681007/78690c70-9814-11e4-8565-18cc9bac1457.png',
         })
       
     })
@@ -237,7 +237,7 @@ var fahrrad = new ol.layer.Vector({
 }),
  style: new ol.style.Style({
        image: new ol.style.Icon({
-          src: 'https://cloud.githubusercontent.com/assets/9860428/5678141/8377dce2-97ef-11e4-869c-5f28fa991c76.png',
+          src: 'https://cloud.githubusercontent.com/assets/9718782/5680793/367de648-9812-11e4-9b10-257efa007730.png',
         })
       
     })
