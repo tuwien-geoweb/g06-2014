@@ -27,8 +27,8 @@ $.get("data/DataDictWien.txt", function(response) {
   // We start at line 3 - line 1 is column names, line 2 is not a variable
   $(response.split('\n').splice(2)).each(function(index, line) {
     $('#topics').append($('<option>')
-      .val(line.substr(0, 21).trim())
-      .html(line.substr(21, 106).trim()));
+      .val(line.substr(0, 20).trim())
+      .html(line.substr(20, 106).trim()));
   });
 });
 
