@@ -8,7 +8,6 @@ DISTRICT_POP_RATIO  Anteil der Bezirksbevölkerung an der Gesamtbevölkerung
 POP_DENSITY         Einwohnerdichte
 RATE_M              Anteil der männlichen Einwohner
 RATE_F              Anteil der weiblichen Einwohnerinnen
-SEX_RATIO           Anteil der Frauen bezogen auf Männer
 RATE_FOR_NATIONAL   Anteil der EinwohnerInnen mit fremder Staatsangehörigkeit
 RATE_FOR_BORN       Anteil der nicht in Österreich geborenen EinwohnerInnen
 RATE_MIG_BACKGROUND Anteil der EinwohnerInnen mit Migrationshintergrund
