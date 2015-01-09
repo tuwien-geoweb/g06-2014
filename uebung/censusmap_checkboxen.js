@@ -100,3 +100,173 @@ form.onsubmit = function(evt) {
   xhr.send();
   evt.preventDefault();
 };
+
+var haltestellen = new ol.layer.Vector({
+  source: new ol.source.GeoJSON({
+  url: 'http://student.ifip.tuwien.ac.at/geoserver/g06_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g06_2014:g06_Haltestellen&maxFeatures=50&outputFormat=json',
+  projection: 'EPSG:3857'
+}),
+ style: new ol.style.Style({
+       image: new ol.style.Icon({
+          src: 'data/citybike.png',
+        })
+      
+    })
+}); 
+
+
+document.getElementById('haltestellen').onclick = function(e){
+  if(this.checked==1){
+    olMap.addLayer(haltestellen);
+  }else{
+    olMap.removeLayer(haltestellen);
+  }
+};
+
+var spielplatz = new ol.layer.Vector({
+  source: new ol.source.GeoJSON({
+  url: 'http://student.ifip.tuwien.ac.at/geoserver/g09_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g09_2014:SPIELPLATZ&maxFeatures=150&outputFormat=json',
+  projection: 'EPSG:3857'
+}),
+ style: new ol.style.Style({
+       image: new ol.style.Icon({
+          src: 'data/spielplatze.png',
+        })
+      
+    })
+}); 
+
+
+document.getElementById('spielplatz').onclick = function(e){
+  if(this.checked==1){
+    olMap.addLayer(spielplatz);
+  }else{
+    olMap.removeLayer(spielplatz);
+  }
+};
+
+var hundesackerl = new ol.layer.Vector({
+  source: new ol.source.GeoJSON({
+  url: 'http://student.ifip.tuwien.ac.at/geoserver/g09_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g09_2014:HUNDESACKERL&maxFeatures=150&outputFormat=json',
+  projection: 'EPSG:3857'
+}),
+ style: new ol.style.Style({
+       image: new ol.style.Icon({
+          src: 'data/hundekotsackerl.png',
+        })
+      
+    })
+}); 
+
+document.getElementById('hundesackerl').onclick = function(e){
+  if(this.checked==1){
+    olMap.addLayer(hundesackerl);
+  }else{
+    olMap.removeLayer(hundesackerl);
+  }
+};
+
+var kindergarten = new ol.layer.Vector({
+  source: new ol.source.GeoJSON({
+  url: 'http://student.ifip.tuwien.ac.at/geoserver/g09_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g09_2014:KINDERGARTEN&maxFeatures=150&outputFormat=json',
+  projection: 'EPSG:3857'
+}),
+ style: new ol.style.Style({
+       image: new ol.style.Icon({
+          src: 'data/kindergarten.png',
+        })
+      
+    })
+}); 
+
+document.getElementById('kindergarten').onclick = function(e){
+  if(this.checked==1){
+    olMap.addLayer(kindergarten);
+  }else{
+    olMap.removeLayer(kindergarten);
+  }
+};
+
+var oeffgruen = new ol.layer.Vector({
+  source: new ol.source.GeoJSON({
+  url: 'http://student.ifip.tuwien.ac.at/geoserver/g09_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g09_2014:OEFFGRUEN&maxFeatures=150&outputFormat=json',
+  projection: 'EPSG:3857'
+}),
+ style: new ol.style.Style({
+       image: new ol.style.Icon({
+          src: 'data/gruen.png',
+        })
+      
+    })
+}); 
+
+document.getElementById('oeffgruen').onclick = function(e){
+  if(this.checked==1){
+    olMap.addLayer(oeffgruen);
+  }else{
+    olMap.removeLayer(oeffgruen);
+  }
+};
+
+var schule = new ol.layer.Vector({
+  source: new ol.source.GeoJSON({
+  url: 'http://student.ifip.tuwien.ac.at/geoserver/g09_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g09_2014:SCHULE&maxFeatures=150&outputFormat=json',
+  projection: 'EPSG:3857'
+}),
+ style: new ol.style.Style({
+       image: new ol.style.Icon({
+          src: 'data/schule.png',
+        })
+      
+    })
+}); 
+
+document.getElementById('schule').onclick = function(e){
+  if(this.checked==1){
+    olMap.addLayer(schule);
+  }else{
+    olMap.removeLayer(schule);
+  }
+};
+
+var ubahn = new ol.layer.Vector({
+  source: new ol.source.GeoJSON({
+  url: 'http://student.ifip.tuwien.ac.at/geoserver/g09_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g09_2014:UBAHN&maxFeatures=150&outputFormat=json',
+  projection: 'EPSG:3857'
+}),
+ style: new ol.style.Style({
+       image: new ol.style.Icon({
+          src: 'data/ubahn.png',
+        })
+      
+    })
+}); 
+
+document.getElementById('ubahn').onclick = function(e){
+  if(this.checked==1){
+    olMap.addLayer(ubahn);
+  }else{
+    olMap.removeLayer(ubahn);
+  }
+};
+
+var wcanlage = new ol.layer.Vector({
+  source: new ol.source.GeoJSON({
+  url: 'http://student.ifip.tuwien.ac.at/geoserver/g09_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g09_2014:WCANLAGE&maxFeatures=150&outputFormat=json',
+  projection: 'EPSG:3857'
+}),
+ style: new ol.style.Style({
+       image: new ol.style.Icon({
+          src: 'data/wc.png',
+        })
+      
+    })
+}); 
+
+document.getElementById('wcanlage').onclick = function(e){
+  if(this.checked==1){
+    olMap.addLayer(wcanlage);
+  }else{
+    olMap.removeLayer(wcanlage);
+  }
+};
