@@ -115,13 +115,14 @@ var haltestellen = new ol.layer.Vector({
 }); 
 
 
-document.getElementById('haltestellen').onclick = function(e){
-  if(this.checked==1){
+function haltestellen() {
+	if(document.getElementById('haltestellen').checked == true){
     olMap.addLayer(haltestellen);
   }else{
     olMap.removeLayer(haltestellen);
-  }
-};
+  };
+}
+
 
 var schulen = new ol.layer.Vector({
   source: new ol.source.GeoJSON({
