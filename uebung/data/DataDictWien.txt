@@ -1,0 +1,24 @@
+Bevölkerungsindikatoren in Wien nach Wiener Bezirk 
+population indicators in Vienna by Vienna district 
+AGE_00_14           Altersklasse bis 14-Jährige
+AGE_15_24           Altersklasse 15- bis 24-Jährige
+AGE_25_59           Altersklasse 29- bis 59-Jährige 
+AGE_60PLUS          Altersklasse ab 60-Jährige
+DISTRICT_POP_RATIO  Anteil der Bezirksbevölkerung an der Gesamtbevölkerung
+POP_DENSITY         Einwohnerdichte
+RATE_M              Anteil der männlichen Einwohner
+RATE_F              Anteil der weiblichen Einwohnerinnen
+SEX_RATIO           Anteil der Frauen bezogen auf Männer
+RATE_FOR_NATIONAL   Anteil der EinwohnerInnen mit fremder Staatsangehörigkeit
+RATE_FOR_BORN       Anteil der nicht in Österreich geborenen EinwohnerInnen
+RATE_MIG_BACKGROUND Anteil der EinwohnerInnen mit Migrationshintergrund
+AVERAGE_AGE_M       Durchschnittsalter der Männer
+AVERAGE_AGE_F       Durchschnittsalter der Frauen
+WORKINGAGE_RATIO    Anteil der EinwohnerInnen im erwerbsfähigen Alter (20-64)
+YOUTH_RATIO         Anteil der Personen im Alter bis 19 Jahren an der Gesamtbevölkerung
+AGE_RATIO           Anteil der Personen im Alter von 65+ Jahren an der Gesamtbevölkerung
+OLD_AGE_RATIO       Anteil der Hochbetagten im Alter von 85+ Jahren an der Gesamtbevölkerung
+DEPENDENCY_RATIO    Abhängigkeitsquotient
+YOUTH_DEP_RATIO     Jugendabhängigkeitsquotient
+AGE_DEP_RATIO       Altenabhängigkeitsquotient
+OLD_AGED_DER_RATIO  Anteil der Personen im Alter von 85+ Jahren an allen Personen im Alter von 65+ Jahren
