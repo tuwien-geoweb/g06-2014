@@ -131,7 +131,7 @@ var schulen = new ol.layer.Vector({
 }),
  style: new ol.style.Style({
        image: new ol.style.Icon({
-          src: 'https://cloud.githubusercontent.com/assets/9718782/5702343/0efb3e4c-9a59-11e4-9d88-ed5b9ecb5224.png',
+          src: 'https://cloud.githubusercontent.com/assets/9718782/5702422/5a596764-9a5a-11e4-9cc7-e0c54883b7dc.png',
         })
       
     })
