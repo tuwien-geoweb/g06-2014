@@ -108,7 +108,7 @@ var haltestellen = new ol.layer.Vector({
 }),
  style: new ol.style.Style({
        image: new ol.style.Icon({
-          src: 'https://cloud.githubusercontent.com/assets/9718782/5680798/40cb48d4-9812-11e4-81a1-6588601345fd.png',
+          src: 'https://cloud.githubusercontent.com/assets/9718782/5702712/6ce678b0-9a5d-11e4-9c26-22a44aea13ea.png',
         })
       
     })
@@ -153,7 +153,7 @@ var universitaeten = new ol.layer.Vector({
 }),
  style: new ol.style.Style({
        image: new ol.style.Icon({
-          src: 'https://cloud.githubusercontent.com/assets/9718782/5680800/4b1f1504-9812-11e4-8e4b-c314a3525267.png',
+          src: 'https://cloud.githubusercontent.com/assets/9718782/5702722/7a5f5ce6-9a5d-11e4-8074-ecde4ace1b3e.png',
         })
       
     })
@@ -174,7 +174,7 @@ var sportstaetten = new ol.layer.Vector({
 }),
  style: new ol.style.Style({
        image: new ol.style.Icon({
-          src: 'https://cloud.githubusercontent.com/assets/9718782/5680797/3c3ed934-9812-11e4-8f50-6ab195576f76.png',
+          src: 'https://cloud.githubusercontent.com/assets/9718782/5702718/73d71ad0-9a5d-11e4-8987-0eb33cdcb922.png',
         })
       
     })
@@ -195,7 +195,7 @@ var parkanlagen = new ol.layer.Vector({
 }),
  style: new ol.style.Style({
        image: new ol.style.Icon({
-          src: 'https://cloud.githubusercontent.com/assets/9718782/5680790/2b0d488a-9812-11e4-9463-9995d496c20c.png',
+          src: 'https://cloud.githubusercontent.com/assets/9718782/5702720/7767bb5a-9a5d-11e4-9577-b40263281ec2.png',
         })
       
     })
@@ -216,7 +216,7 @@ var spielplaetze = new ol.layer.Vector({
 }),
  style: new ol.style.Style({
        image: new ol.style.Icon({
-          src: 'https://cloud.githubusercontent.com/assets/9718782/5681007/78690c70-9814-11e4-8565-18cc9bac1457.png',
+          src: 'https://cloud.githubusercontent.com/assets/9718782/5702710/65b04274-9a5d-11e4-8484-ac290f232ade.png',
         })
       
     })
@@ -237,7 +237,7 @@ var fahrrad = new ol.layer.Vector({
 }),
  style: new ol.style.Style({
        image: new ol.style.Icon({
-          src: 'https://cloud.githubusercontent.com/assets/9718782/5680793/367de648-9812-11e4-9b10-257efa007730.png',
+          src: 'https://cloud.githubusercontent.com/assets/9718782/5702714/70cb2674-9a5d-11e4-9465-11cbfc8fe7b9.png',
         })
       
     })
