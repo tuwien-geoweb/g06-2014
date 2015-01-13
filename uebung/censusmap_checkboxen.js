@@ -101,6 +101,9 @@ form.onsubmit = function(evt) {
   evt.preventDefault();
 };
 
+
+// Funktion bei Anklicken der Checkboxen
+
 var haltestellen = new ol.layer.Vector({
   source: new ol.source.GeoJSON({
   url: 'http://student.ifip.tuwien.ac.at/geoserver/g06_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g06_2014:g06_Haltestellen&maxFeatures=50&outputFormat=json',
@@ -114,15 +117,13 @@ var haltestellen = new ol.layer.Vector({
     })
 }); 
 
-
-function haltestellen() {
-	if(document.getElementById('haltestellen').checked == true){
-    olMap.addLayer(haltestellen);
+document.getElementById('haltestellen').onclick = function(e){
+  if(this.checked==1){
+    olMap.addLayer(haltstellen);
   }else{
     olMap.removeLayer(haltestellen);
-  };
-}
-
+  }
+};
 
 var schulen = new ol.layer.Vector({
   source: new ol.source.GeoJSON({
@@ -136,7 +137,6 @@ var schulen = new ol.layer.Vector({
       
     })
 }); 
-
 
 document.getElementById('schulen').onclick = function(e){
   if(this.checked==1){
