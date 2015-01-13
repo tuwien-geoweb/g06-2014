@@ -43,13 +43,13 @@
         height: 120px;
         border: 0;
       }
-      .navbar-form .input-group {
-        width: 100px;
-        padding-right: 20px;
-        float: left;
+     .navbar-form .input-group {
+  	width: 300px;
+  	padding-right: 20px;
+  	float: left;
       }
-      .navbar-form .form-group select {
-        width: 300px;
+     .navbar-form .form-group {
+  	width: 450px;
         padding-right: 20px;
       }
     </style>
@@ -57,26 +57,22 @@
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">Wohnstandortanalyse der Gruppe 06</a>
+        <a class="navbar-brand" href="#">Boundless Census Map</a>
       </div>
       <form class="navbar-form navbar-right">
-        <div class="button">
-        	<form name="locate_me" >
-        	<input name="recenter" type="button" style="width:100px" value="Benutzerstandort" onclick="JavaScript:recenter();">
-       		</form>
-	</div>
-	<div class="form-group">
-          <select id="topics" class="form-control">
-        </select>
+        <div class="form-group">
+          <select id="topics" class="form-control"></select>
         </div>
-      <div class="input-group">
-        <input type="text" class="form-control" name="query">
-        <span class="input-group-btn">
-          <button class="btn btn-default" type="submit">
-            <span class="glyphicon glyphicon-search"></span>
-          </button>
-        </span>
-      </div>
+        
+        <div class="input-group">
+  <input type="text" class="form-control" name="query">
+  <span class="input-group-btn">
+    <button class="btn btn-default" type="submit">
+      <span class="glyphicon glyphicon-search"></span>
+    </button>
+  </span>
+</div>
+
       </form>
     </nav>
     <div id="map">
