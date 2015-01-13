@@ -106,7 +106,7 @@ form.onsubmit = function(evt) {
 
 var haltestellen = new ol.layer.Vector({
   source: new ol.source.GeoJSON({
-  url: 'http://student.ifip.tuwien.ac.at/geoserver/g06_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g06_2014:g06_Haltestellen&maxFeatures=50&outputFormat=json',
+  url: 'http://student.ifip.tuwien.ac.at/geoserver/g06_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g06_2014:g06_Haltestellen&maxFeatures=150&outputFormat=json',
   projection: 'EPSG:3857'
 }),
  style: new ol.style.Style({
@@ -127,7 +127,7 @@ document.getElementById('haltestellen').onclick = function(e){
 
 var schulen = new ol.layer.Vector({
   source: new ol.source.GeoJSON({
-  url: 'http://student.ifip.tuwien.ac.at/geoserver/g06_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g06_2014:g06_Schulen&maxFeatures=50&outputFormat=json',
+  url: 'http://student.ifip.tuwien.ac.at/geoserver/g06_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g06_2014:g06_Schulen&maxFeatures=150&outputFormat=json',
   projection: 'EPSG:3857'
 }),
  style: new ol.style.Style({
@@ -148,7 +148,7 @@ document.getElementById('schulen').onclick = function(e){
 
 var universitaeten = new ol.layer.Vector({
   source: new ol.source.GeoJSON({
-  url: 'http://student.ifip.tuwien.ac.at/geoserver/g06_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g06_2014:g06_Universitaeten&maxFeatures=50&outputFormat=json',
+  url: 'http://student.ifip.tuwien.ac.at/geoserver/g06_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g06_2014:g06_Universitaeten&maxFeatures=150&outputFormat=json',
   projection: 'EPSG:3857'
 }),
  style: new ol.style.Style({
@@ -169,7 +169,7 @@ document.getElementById('universitaeten').onclick = function(e){
 
 var sportstaetten = new ol.layer.Vector({
   source: new ol.source.GeoJSON({
-  url: 'http://student.ifip.tuwien.ac.at/geoserver/g06_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g06_2014:g06_Sportstaetten&maxFeatures=50&outputFormat=json',
+  url: 'http://student.ifip.tuwien.ac.at/geoserver/g06_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g06_2014:g06_Sportstaetten&maxFeatures=150&outputFormat=json',
   projection: 'EPSG:3857'
 }),
  style: new ol.style.Style({
@@ -190,7 +190,7 @@ document.getElementById('sportstaetten').onclick = function(e){
 
 var parkanlagen = new ol.layer.Vector({
   source: new ol.source.GeoJSON({
-  url: 'http://student.ifip.tuwien.ac.at/geoserver/g06_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g06_2014:g06_Parkanlagen&maxFeatures=50&outputFormat=json',
+  url: 'http://student.ifip.tuwien.ac.at/geoserver/g06_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g06_2014:g06_Parkanlagen&maxFeatures=150&outputFormat=json',
   projection: 'EPSG:3857'
 }),
  style: new ol.style.Style({
@@ -211,7 +211,7 @@ document.getElementById('parkanlagen').onclick = function(e){
 
 var spielplaetze = new ol.layer.Vector({
   source: new ol.source.GeoJSON({
-  url: 'http://student.ifip.tuwien.ac.at/geoserver/g06_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g06_2014:g06_Spielplaetze&maxFeatures=50&outputFormat=json',
+  url: 'http://student.ifip.tuwien.ac.at/geoserver/g06_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g06_2014:g06_Spielplaetze&maxFeatures=150&outputFormat=json',
   projection: 'EPSG:3857'
 }),
  style: new ol.style.Style({
@@ -232,7 +232,7 @@ document.getElementById('spielplaetze').onclick = function(e){
 
 var fahrrad = new ol.layer.Vector({
   source: new ol.source.GeoJSON({
-  url: 'http://student.ifip.tuwien.ac.at/geoserver/g06_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g06_2014:g06_Fahrradabstellanlagen&maxFeatures=50&outputFormat=json',
+  url: 'http://student.ifip.tuwien.ac.at/geoserver/g06_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g06_2014:g06_Fahrradabstellanlagen&maxFeatures=150&outputFormat=json',
   projection: 'EPSG:3857'
 }),
  style: new ol.style.Style({
