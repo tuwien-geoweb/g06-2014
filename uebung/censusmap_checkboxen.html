@@ -52,6 +52,10 @@
   	width: 450px;
         padding-right: 20px;
       }
+       .navbar-form .recenter-button {
+  	width: 100px;
+        padding-right: 20px;
+      }
     </style>
   </head>
   <body>
@@ -60,18 +64,21 @@
         <a class="navbar-brand" href="#">Boundless Census Map</a>
       </div>
       <form class="navbar-form navbar-right">
+        <div class="recenter-button">
+          <input name="recenter-location" type="button" value="Standort" onclick="JavaScript:recenter();">
+        </div>
         <div class="form-group">
           <select id="topics" class="form-control"></select>
         </div>
         
         <div class="input-group">
-  <input type="text" class="form-control" name="query">
-  <span class="input-group-btn">
-    <button class="btn btn-default" type="submit">
-      <span class="glyphicon glyphicon-search"></span>
-    </button>
-  </span>
-</div>
+          <input type="text" class="form-control" name="query">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>
+      </div>
 
       </form>
     </nav>
