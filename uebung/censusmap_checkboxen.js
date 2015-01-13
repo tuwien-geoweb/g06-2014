@@ -90,10 +90,11 @@ function recenter() {
         geolocation.setTracking(true); // here the browser may ask for confirmation
         geolocation.on('change', function() {
         geolocation.setTracking(false);
-        map.getView().fitGeometry(geolocation.getAccuracyGeometry(), map.getSize(), {nearest: true, maxZoom: 19});
-        marker.setGeometry(new ol.geom.Point(map.getView().getCenter()));
-        });
-      }
+       olMap.getView().setCenter(geolocation.getPosition());
+    olMap.getView().setZoom(18);
+    //marker.setGeometry(new ol.geom.Point(olMap.getView().getCenter()));
+  });
+}
       recenter();
       
 // Submit query to Nominatim and zoom map to the result's extent
