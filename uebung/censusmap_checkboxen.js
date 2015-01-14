@@ -135,7 +135,7 @@ var haltestellen = new ol.layer.Vector({
 
 document.getElementById('haltestellen').onclick = function(e){
   if(this.checked==1){
-    olMap.addLayer(haltstellen);
+    olMap.addLayer(haltestellen);
   }else{
     olMap.removeLayer(haltestellen);
   }
