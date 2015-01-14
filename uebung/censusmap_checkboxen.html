@@ -64,19 +64,22 @@
       
       <form class="navbar-form navbar-center">
       <div class="row">
-				<div class="col-md-5" >
+      
+      <div class="col-md-3" >
+      <div class="navbar-header">
+        <a class="navbar-brand">Boundless Census Map</a>
+      </div>
+      </div>
+      
+	<div class="col-md-4" >
         <div class="form-group">
           <select id="topics" class="form-control"></select>
         </div>
         </div>
         
-        <div class="col-md-2" >
-        <div class="recenter-button">
-          <input name="recenter-location" type="button" value="Standort" onclick="JavaScript:recenter();">
-        </div>
-        </div>
         
-        <div class="col-md-5" >
+        
+        <div class="col-md-3" >
         <div class="input-group">
           <input type="text" class="form-control" name="query">
           <span class="input-group-btn">
@@ -86,9 +89,14 @@
           </span>
         </div>
         </div>
+        
+        <div class="col-md-2" >
+        <div class="recenter-button">
+          <input name="recenter-location" type="button" value="Standort" onclick="JavaScript:recenter();">
+        </div>
         </div>
         
-        
+        </div>
       </form>
     </nav>
     <div id="map">
