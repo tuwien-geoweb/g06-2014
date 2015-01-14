@@ -122,7 +122,7 @@ form.onsubmit = function(evt) {
 
 var haltestellen = new ol.layer.Vector({
   source: new ol.source.GeoJSON({
-  url: 'http://student.ifip.tuwien.ac.at/geoserver/g06_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g06_2014:g06_Haltestellen&maxFeatures=500&outputFormat=json',
+  url: 'http://student.ifip.tuwien.ac.at/geoserver/g06_2014/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g06_2014:g06_Haltestellen&outputFormat=json',
   projection: 'EPSG:3857'
 }),
  style: new ol.style.Style({
