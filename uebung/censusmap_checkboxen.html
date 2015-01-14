@@ -61,10 +61,14 @@
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       
-      <form class="navbar-form navbar-left">
+      <form class="navbar-form navbar-center">
 
         <div class="form-group">
           <select id="topics" class="form-control"></select>
+        </div>
+        
+        <div class="recenter-button">
+          <input name="recenter-location" type="button" value="Standort" onclick="JavaScript:recenter();">
         </div>
         
         <div class="input-group">
@@ -76,9 +80,7 @@
           </span>
         </div>
 
-        <div class="recenter-button">
-          <input name="recenter-location" type="button" value="Standort" onclick="JavaScript:recenter();">
-        </div>
+        
         
       </form>
     </nav>
