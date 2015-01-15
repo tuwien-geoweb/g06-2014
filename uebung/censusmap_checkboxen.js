@@ -81,13 +81,13 @@ olMap.on('singleclick', function(evt) {
 
 });
 //Marker Probe
-new ol.style.Style({
-  image: new ol.style.Icon(/** @type {olx.style.IconOptions} */ ({
-  anchor: [0.5, 1],
-  anchorXUnits: 'fraction',
-  anchorYUnits: 'pixels',
-  src: 'https://cloud.githubusercontent.com/assets/9716588/5280587/8397ac84-7af3-11e4-98d9-a29cf4d84ce9.png'
-}))
+//new ol.style.Style({
+  //image: new ol.style.Icon(/** @type {olx.style.IconOptions} */ ({
+  //anchor: [0.5, 1],
+  //anchorXUnits: 'fraction',
+  //anchorYUnits: 'pixels',
+  //src: 'https://cloud.githubusercontent.com/assets/9716588/5280587/8397ac84-7af3-11e4-98d9-a29cf4d84ce9.png'
+//}))
 
 //Zoom zum Benutzerstandort 
 
@@ -100,7 +100,7 @@ function recenter() {
         geolocation.setTracking(false);
        olMap.getView().setCenter(geolocation.getPosition());
     olMap.getView().setZoom(18);
-    marker.setGeometry(new ol.geom.Point(olMap.getView().getCenter()));
+    //marker.setGeometry(new ol.geom.Point(olMap.getView().getCenter()));
   });
 }
       recenter();
