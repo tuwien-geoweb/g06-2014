@@ -80,14 +80,6 @@ olMap.on('singleclick', function(evt) {
 };
 
 });
-//Marker Probe
-//new ol.style.Style({
-  //image: new ol.style.Icon(/** @type {olx.style.IconOptions} */ ({
-  //anchor: [0.5, 1],
-  //anchorXUnits: 'fraction',
-  //anchorYUnits: 'pixels',
-  //src: 'https://cloud.githubusercontent.com/assets/9716588/5280587/8397ac84-7af3-11e4-98d9-a29cf4d84ce9.png'
-//}))
 
 //Zoom zum Benutzerstandort 
 
